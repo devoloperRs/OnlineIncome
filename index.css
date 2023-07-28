@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+/*font-family: 'Lily Script One', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+/*font-family: 'Bayon', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@700&display=swap');
+/*font-family: 'Sofia Sans Semi Condensed', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@600&display=swap');
+/*font-family: 'Fira Sans Extra Condensed', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&display=swap');
+/*font-family: 'Bai Jamjuree', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/*font-family: 'Rubik', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+/*font-family: 'Barlow', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+/*font-family: 'Work Sans', sans-serif;*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Bai Jamjuree', sans-serif;
+	
+}
+html{
+	scroll-behavior: smooth;
+}
+#home{
+	background:#fff;
+	width: 100%;
+	
+	
+}
+#home .header{
+	width: 100%;
+	height: 100px;
+	
+	display: flex;
+	justify-content: space-between;
+}
+#home .header .left{
+	width: 80%;
+	
+	
+}
+#home .header .right{
+	width: 20%;
+	
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+
+
+/* *** side - bar ***  */
+#check{
+	display: none;
+}
+
+
+#check-open {
+	position: fixed;
+	right: 39px;
+	top: 10px;
+	opacity: 1;
+	font-size: 90px;
+	transition: ease 1s;
+	z-index: 2;
+}
+#close{
+	position: fixed;
+	z-index: 4;
+	right: 30px;
+	top: -999px;
+/*	top: -3px;*/
+	font-size: 43px;
+	transition: ease 1s;
+}
+
+
+/*  transiton  */
+
+#check:checked ~ .side-bar{
+	top:30px;
+	
+}
+#check:checked ~ label #close{
+	top:40px;
+	
+}
+#check:checked ~ label #check-open{
+	opacity: 0;
+	top: 1100px;
+	cursor: none;
+}
+
+#home .side-bar{
+	z-index: 3;
+	width: 13%;
+	height: 990px;
+	position: fixed;
+	right: 20px;
+	top: -999px;
+ 
+	padding:20px;
+/* !!!!!!!!	*/
+	display: fixed;
+	justify-content:center;
+	background: #dfeded;
+	
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	text-align: center;
+	align-items: center;
+	
+	transition: ease 1s ; 
+}
+#home .side-bar ul{
+	list-style: none;
+	
+	
+	
+}
+#home .side-bar ul li{
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+#home .side-bar ul li a{
+	font-size: 3.3em;
+	background: #fff;
+	
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	padding: 20px 25px;
+	margin-bottom: 40px;
+	border-radius: 20px;
+	color:black;
+	font-weight: bold;
+}
+/*#home .side-bar ul .user-sidebar{}*/
+
+
+
+#home .side-bar ul .user-sidebar a{
+	font-size: 105px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	position: relative;
+	color: black;
+	box-shadow: none;
+}
+#home .side-bar ul .user-sidebar a{
+	background: none;
+	
+}
+
+/* left logo design */
+
+#home .left h1{
+	font-size:80px;
+	font-family: 'Lily Script One', cursive;
+	margin: 10px 0 0 40px ;
+	word-spacing: 10px;
+	
+}
+#home .left h1 span{
+	color: pink;
+	font-family: 'Lily Script One', cursive;
+	color: #2aa150;
+}
+
+
+/*main styles*/
+#home .main{
+	position: relative;
+	width: 100%;
+	height: 93%;
+	
+	z-index: 1;
+}
+#home .main .tringle-shape{
+	background:#d8ebeb;
+	width: 900px;
+	height: 900px;
+	position: relative;
+	left:40px;
+	bottom: -230px;
+	clip-path: polygon(75% 0, 0 0, 0 100%);	
+	display: flex;
+	justify-content: flex-start;
+	
+}
+#home .main .tringle-shape .meten{
+	width:600px;
+	height: 500px;
+	
+}
+
+#home .main .tringle-shape .meten p{
+	margin-left:54px;
+	font-size: 50px;
+	color: #4b6161;
+	-webkit-text-stroke:0.1px #000;
+}
+
+
+#home .main img{
+	width: 790px;
+	position: relative;
+	top: 210px;
+	left: 20px;
+	animation:moneyDance 3s ease-in-out infinite;
+}
+@keyframes  moneyDance{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(-1.8rem);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+#home .main .money-right-img{
+	position: relative;
+	width: 700px;
+	top:-590px;
+	left: 220px;
+}
+/*---rigth-tringle-----*/
+#home .main .rigth-tringle{
+	width: 700px;
+	height:750px;
+	clip-path: polygon(100% 100%, 100% 0, 0 131%);
+	position: relative;
+	top: -640px;
+	left: 220px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	
+
+}
+#home .main .rigth-tringle button{
+	width: 200px;
+	height: 200px;
+	background:#d8ebeb ;
+	box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px inset, rgb(0 0 0 / 30%) 0px 18px 36px -18px inset, 0px 0px 20px white, inset 14px -11px 30px white;
+	margin:299px 70px 0 0 ;
+	border: none;
+	border-radius: 50%;
+	padding: 20px;
+	font-size: 40px;
+	text-transform: capitalize;
+	font-weight: bold;
+	color: #4b6161;
+}
+
+/*  !!!!!!!------welcome------!!!!!!  */
+
+
+.title-container{
+	
+	width: 450px;
+	height: 90px;
+	text-transform: uppercase;
+	position: relative;
+	left:50px;
+	top: 10px;
+	margin-bottom: 20px;
+}
+
+	
+	
+.title-container h2{
+	font-size: 79px;
+	font-family: 'Sofia Sans Semi Condensed', sans-serif;
+	color: #fff;
+	font-weight: bold;
+	
+	
+}
+.title-container h2::before{
+	content: attr(deta-text);
+	position:absolute;
+	
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #4b6161;
+	-webkit-text-stroke:4px #4b6161;
+	border-right: 8px solid #4b6161;
+	
+	overflow: hidden;
+	animation: animateBox 6s linear infinite;
+}
+@keyframes animateBox{
+	0%,10%,100%{
+		width: 0;
+	}
+	70%,90%{
+		width: 100%;
+	}
+}
+
+
+
+
+

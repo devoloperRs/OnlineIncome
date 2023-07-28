@@ -1,0 +1,113 @@
+#join{
+	width: 100%;
+	padding: 60px;
+}
+#join .continer{
+	width: 100%;
+	
+	
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+#join .continer .title-join{
+	width: 100%;
+	height: 140px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+#join .continer .title-join h1{
+	font-size: 70px;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	word-spacing: 10px;
+	padding-bottom: 0px;
+	color: #4b6161;
+}
+#join .continer .box-join{
+	width: 50%;
+	height: 700px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#join .continer .box-join .title-box{
+	width: 100%;
+	height: 130px;
+	background: white;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	
+}
+#join .continer .box-join .title-box h1{
+	padding: 130px 0 20px 0px ;
+	font-size: 60px;
+	text-transform: capitalize;
+	border-bottom: 2px solid #4b6161;
+	
+	
+}
+#join .continer .box-join .circle-join{
+	width: 100%;
+	height: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#join .continer .box-join .circle-join .skill{
+	width: 400px;
+	height: 400px;
+	
+	position: relative;
+	display: flex;
+	
+}
+#join .continer .box-join .circle-join .skill .outer{
+	height: 400px;
+	width: 400px;
+	background: #4b6161;
+	border-radius: 50%;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15) , 
+				-6px -6px 10px -1px rgba(255,255,255,0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+
+
+	
+
+#join .continer .box-join .circle-join .skill .outer .inner{
+	height: 330px;
+	width: 330px;
+	background: white;
+	border-radius: 50%;
+	
+	box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2) , 
+				inset -4px -4px 6px -1px rgba(255,255,255,0.7), 
+				-0.5px -0.5px 0px rgba(255,255,255,1),	0.5px 0.5px 0px rgba(0,0,0,0.15),
+				0px 12px 10px -10px rgba(0,0,0,0.05);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#join .continer .box-join .circle-join .skill #number , #number2,#number3,#number4{
+	
+	font-weight: bold;
+	font-size: 70px;
+	
+	
+}
+
+
+
+
